@@ -1,9 +1,11 @@
 @startuml
-|#pink|接收模块|
+|#pink|pm_mt_task.c\n接收pm任务|
+
 start
     fork
         :oam_mt_task_parse_pm_task\n解析新任务;
         :oam_mt_task_find_mr_task_by_instid\n根据实例号去找当前任务的索引;
+        :更新任务信息;
         :oam_mt_get_next_mr_upd_sec\n获取下次上报的秒数;
 
         note left
@@ -14,7 +16,7 @@ start
 
 
     fork again
-        |#AntiqueWhite|【up_time_sec】记录还有多少秒上报：|
+        |#AntiqueWhite【up_time_sec】记录还有多少秒上报：|
         fork
             : oam_mt_task_parse_mr_task;
             :oam_mt_get_next_mr_upd_sec;
