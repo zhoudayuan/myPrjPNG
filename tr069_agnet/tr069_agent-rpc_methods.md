@@ -1,13 +1,7 @@
 @startuml
-
-|#LavenderBlush|1111|
+|#AliceBlue|方法|
 start
 fork
-
-    :cwmp_handle_end_session;
-
-fork again
-|#AliceBlue|方法|
     :main;
     :CSPL_InitEx 初始化日志\n替换 CSPL_Init 和 CSPL_InitLog 和 CSPL_Open 函数;
     :初始化 cwmp
@@ -78,8 +72,6 @@ fork again
     :cwmp_inform;
 
 
-
-
     partition "主动连接" {
 
         :http_client_init;
@@ -99,15 +91,7 @@ fork again
 
     partition "构造inform消息，\n发送给acs，同时接收acs的响应消息，解析InformResponse消息\n入口:rpc_inform" {
         :rpc_inform;
-            note
-            构造inform消息
-            发送给acs
-            同时接收acs的响应消息
-            解析InformResponse消息
-            endnote
         :xml_prepare_inform_message;
-        :http_send_message;
-        :xml_parse_inform_response_message;
         note
             装载 inform-报文：CWMP_INFORM_MESSAGE 获取指针
         endnote
