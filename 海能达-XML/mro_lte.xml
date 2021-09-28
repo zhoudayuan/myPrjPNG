@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bulkPmMrDataFile>
+    <fileHeader fileFormatVersion="V2.0.2" reportTime="2021-02-09T10:26:56.079" startTime="2021-02-09T10:25:46.360" endTime="2021-02-09T10:26:47.800" period="0" jobid="19"/>
+    <eNB id="226">
+        <measurement>
+            <smr>MR.LteScEarfcn MR.LteScPci MR.LteScRSRP MR.LteScRSRQ MR.LteNcEarfcn MR.LteNcPci MR.LteNcRSRP MR.LteNcRSRQ</smr>
+            <object id="57856" MmeUeS1apId="33555201" MmeGroupId="1" MmeCode="1" TimeStamp="2021-02-09T10:26:06.840">
+                <v>9359 226 25 255 NIL NIL NIL NIL</v>
+            </object>
+            <object id="57856" MmeUeS1apId="33555202" MmeGroupId="1" MmeCode="1" TimeStamp="2021-02-09T10:26:06.840">
+                <v>9359 226 70 255 NIL NIL NIL NIL</v>
+            </object>
+            <object id="57856" MmeUeS1apId="33555201" MmeGroupId="1" MmeCode="1" TimeStamp="2021-02-09T10:26:58.040">
+                <v>9359 226 23 255 NIL NIL NIL NIL</v>
+            </object>
+            <object id="57856" MmeUeS1apId="33555202" MmeGroupId="1" MmeCode="1" TimeStamp="2021-02-09T10:26:58.040">
+                <v>9359 226 70 255 NIL NIL NIL NIL</v>
+            </object>
+        </measurement>
+    </eNB>
+</bulkPmMrDataFile>

@@ -1,0 +1,6 @@
+cd /var/log/cspl/;
+
+cd /var/log/cspl/log_cm_0922; cp log_enodeb.dat* .; gzip -df *.gz
+
+
+cd /var/log/cspl/log_cm_0922/ ; cat log_enodeb.* | sort | grep  'NEXT' 

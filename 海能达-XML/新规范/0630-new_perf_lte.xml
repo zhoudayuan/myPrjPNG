@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MeasDataCollection.xsl"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+    <fileHeader fileFormatVersion="32.435 V7.0" vendorName="abc" dnPrefix="DC=BJ,SubNetwork=1">
+        <fileSender localDn="ManagedElement=SN" />
+        <measCollec beginTime="2020-12-01T17:00:00+08:00" />
+    </fileHeader>
+    <measData>
+        <managedElement localDn="ManagedElement=SN " />
+        <!-- ManagedElement级counter -->
+        <measInfo>
+            <job jobId="3" />
+            <granPeriod duration="PT900S" endTime="2020-12-01T17:15:00+08:00" />
+            <repPeriod duration="PT900S" />
+            <measType p="1">counter1</measType>
+            <measType p="2">counter2</measType>
+            <measValue measObjLdn="Type=ManagedElement, eNBID=23">
+                <r p="1">6</r>
+                <r p="2">0</r>
+            </measValue>
+        </measInfo>
+        <!-- SCTP级counter -->
+        <measInfo>
+            <job jobId="3" />
+            <granPeriod duration="PT900S" endTime="2020-12-01T17:15:00+08:00" />
+            <repPeriod duration="PT900S" />
+            <measType p="1">counter1</measType>
+            <measType p="2">counter2</measType>
+            <measValue measObjLdn="Type=SCTP, eNBID=23, LocalIP = 11.11.11.11, RemoteIP=22.22.22.22 ">
+                <r p="1">6</r>
+                <r p="2">0</r>
+            </measValue>
+        </measInfo>
+        <!-- EpRpDynS1uEnb级counter -->
+        <measInfo>
+            <job jobId="3" />
+            <granPeriod duration="PT900S" endTime="2020-12-01T17:15:00+08:00" />
+            <repPeriod duration="PT900S" />
+            <measType p="1">counter1</measType>
+            <measType p="2">counter2</measType>
+            <measValue measObjLdn="Type=EpRpDynS1uEnb, eNBID=23, LocalIP=11.11.11.11, RemoteIP=22.22.22.22">
+                <r p="1">6</r>
+                <r p="2">0</r>
+            </measValue>
+        </measInfo>
+        <!-- Cell级counter -->
+        <measInfo>
+            <job jobId="3" />
+            <granPeriod duration="PT900S" endTime="2020-12-01T17:15:00+08:00" />
+            <repPeriod duration="PT900S" />
+            <measType p="1">counter1</measType>
+            <measType p="2">counter2</measType>
+            <measValue measObjLdn="Type=Cell,eNBID=123,ECI=22">
+                <r p="1">6</r>
+                <r p="2">0</r>
+            </measValue>
+        </measInfo>
+        <!-- 切入精确分析统计项 -->
+        <measInfo>
+            <job jobId="12" />
+            <granPeriod duration="PT900S" endTime="2020-12-01T17:15:00+08:00" />
+            <repPeriod duration="PT900S" />
+            <measType p="1">counter1</measType>
+            <measType p="2">counter2</measType>
+            <measValue measObjLdn="Type = HO_IN, eNBID = 456, LocalECI = 23, RemoteCI = 34">
+                <r p="1">6</r>
+                <r p="2">0</r>
+            </measValue>
+            <measValue measObjLdn="Type = HO_IN, eNBID = 456, LocalECI = 23, RemoteCI = 35">
+                <r p="1">6</r>
+                <r p="2">0</r>
+            </measValue>
+        </measInfo>
+        <!-- 切出精确分析统计项 -->
+        <measInfo>
+            <job jobId="13" />
+            <granPeriod duration="PT900S" endTime="2020-12-01T17:15:00+08:00" />
+            <repPeriod duration="PT900S" />
+            <measType p="1">counter1</measType>
+            <measType p="2">counter2</measType>
+            <measValue measObjLdn="Type = HO_OUT, eNBID = 456, LocalECI = 23, RemoteCI = 34">
+                <r p="1">6</r>
+                <r p="2">0</r>
+            </measValue>
+        </measInfo>
+    </measData>
+    <fileFooter>
+        <measCollec endTime="2020-12-01T17:15:00+08:00" />
+    </fileFooter>
+</measCollecFile>

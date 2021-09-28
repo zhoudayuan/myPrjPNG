@@ -1,0 +1,74 @@
+awk  'BEGIN{print "Line\t\tDate\t\t\tTime\t\t\tKey\n-------------------------------------"} /NEXT/{printf "%-45s %-12s %-16s %-16s %-s\n", FILENAME, NR, $1, $2, $NF}'   log_enodeb* | sort -nk 4
+
+
+
+get_patj_val_utc
+
+
+oam_mt_task_init_pm_time_file_gen
+
+oam_mt_task_init_pm_time_file_up
+
+
+
+
+
+
+
+
+oam_mt_pm_report_meas_data
+
+
+
+
+
+
+
+
+
+小区频点统一取dlEarfcn从MO的Cell_S_T中获取，
+
+
+
+
+/pub/FreeBSD/releases/i386/i386
+
+
+
+
+
+typedef struct ST_S_Cell {
+    U32     cellId; /* 小区标识 */
+    char    sectorId[255]; /* 扇区索引 */
+    U32     phyCellId; /* 物理小区标识 */
+    U32     duplexingMode; /* 小区双工模式 */
+    U32     subFrameAssignment; /* 子帧配比 */
+    U32     specialSubframePatterns; /* 特殊子帧配比 */
+    U8      bandInd; /* 频带指示 */
+    U16     ulEarfcn; /* 上行频点 */
+    U16     dlEarfcn; /* 下行频点 */
+    U32     bandwidth; /* 带宽 */
+    U32     antennaPortsCount; /* 天线端口数目 */
+    U32     antennaMode; /* 天线模式 */
+    U32     cellActiveState; /* 小区激活状态 */
+    char    plmnidx[255]; /* plmn索引 */
+    U8      taIdx; /* Ta索引 */
+    U32     timeAlignmentTimerCommon; /* 上行时间对齐定时器长度 */
+    U32     businessType; /* 商用场景 */
+    U32     maxUeNum; /* 用户规格 */
+    U32     rruMode; /* RRU模式 */
+    U32     dRXEnable; /* DRX使能开关 */
+} Cell_S_T;
+
+
+
+
+
+wget http://ftp1.chinafreebsd.cn/pub/FreeBSD/releases/amd64/11.1-RELEASE/src.txz
+
+cd /home/hades/tlpi_github/tlpi-dist/time
+
+
+0001-01-01T00:00:00Z
+
+zdy32768@163.com

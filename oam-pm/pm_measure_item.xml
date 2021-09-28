@@ -1,0 +1,1318 @@
+<!--
+    统计类型（statType）：0=DER_AVG 1=DER_MAX 2=DER_CNT 3=SI_AVG 4=SI_MAX 5=CC 6=GAUGE 7=SI_CNT
+    Counter类型（counterType）：1=PmAdd 2=PmSet 3=PmSample
+    数据来源（measObjName）：CELL
+    输出数据类型（outType）：0=实数 1=整数 2=如果无此值则输出‘-’，否则实数 3=如果无此值则输出‘-’，否则整数
+-->
+<configuration>
+    <global>
+    </global>
+    <!-- sheeet HA -->
+    <pmMeas measName="RRC.SetupTimeMean" measObjName="Cell" statType="0" outType="3">
+        <countId counterType="3">4131</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.SetupTimeMax" measObjName="Cell" statType="1" outType="1">
+        <countId counterType="3">4131</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.ConnMean" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">4132</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.ConnMax" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">4132</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.AttConnEstab" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4099</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.AttConnEstab.causeEmergency" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.SuccConnEstab" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4098</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.SuccConnEstab.causeEmergency" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4113</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.AttConnReestab" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4101</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.AttConnReestab.causeRecfgFailure" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.SuccConnReestab" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4102</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.SuccConnReestab.NonSrccell" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4133</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.SuccConnReestab.causeRecfgFailure" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.ConnReleaseCsfb" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.ConnRelease.RedirectTo2G" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.ConnRelease.RedirectTo3G" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.EffectiveConnMean" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">4143</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.EffectiveConnMax" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">4142</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.AdmissionConnMean" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">5496</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.AdmissionConnMax" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">5496</countId>
+    </pmMeas>
+    <pmMeas measName="RRC.FailConnEstab" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">4125</countId>
+        <countId counterType="3">4126</countId>
+        <countId counterType="3">4127</countId>
+        <countId counterType="3">4128</countId>
+        <countId counterType="3">4129</countId>
+        <countId counterType="3">4130</countId>
+    </pmMeas>
+    
+    <!-- sheeet HB -->    
+    <pmMeas measName="ERAB.NbrMeanEstab" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">6520</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMeanEstab.1" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">6521</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMeanEstab.2" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">6522</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMeanEstab.3" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">6523</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMeanEstab.4" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">6524</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMeanEstab.5" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">6525</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMeanEstab.6" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">6526</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMeanEstab.7" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">6527</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMeanEstab.8" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">6528</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMeanEstab.9" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">6529</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrHoInc" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5766</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrHoInc.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5767</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrHoInc.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5768</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrHoInc.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5769</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrHoInc.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5770</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrHoInc.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5771</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrHoInc.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5772</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrHoInc.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5773</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrHoInc.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5774</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrHoInc.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5775</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttEstab" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5726</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttEstab.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5727</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttEstab.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5728</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttEstab.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5729</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttEstab.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5730</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttEstab.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5731</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttEstab.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5732</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttEstab.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5733</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttEstab.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5734</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttEstab.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5735</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccEstab" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5736</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccEstab.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5737</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccEstab.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5738</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccEstab.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5739</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccEstab.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5740</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccEstab.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5741</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccEstab.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5742</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccEstab.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5743</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccEstab.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5744</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccEstab.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5745</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrFailEstab" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5746</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrFailEstab.CauseTransport" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6620</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrFailEstab.CauseRadioResourcesNotAvailable" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5717</countId>
+        <countId counterType="1">5718</countId>
+        <countId counterType="1">5719</countId>
+        <countId counterType="1">5720</countId>
+        <countId counterType="1">5721</countId>
+        <countId counterType="1">5722</countId>
+        <countId counterType="1">5723</countId>
+        <countId counterType="1">5724</countId>
+        <countId counterType="1">5725</countId>
+        <countId counterType="1">5860</countId>
+        <countId counterType="1">5861</countId>
+        <countId counterType="1">5862</countId>
+        <countId counterType="1">5863</countId>
+        <countId counterType="1">5864</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrFailEstab.CauseFailureInRadioInterfaceProcedure" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrFailEstab.CauseUnspecified2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6126</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.CauseUserInactivity" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6311</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.CauseUnspecified2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6127</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6128</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6129</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6130</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6131</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6132</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6133</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6134</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6135</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.Normal" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6106</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.Normal.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6107</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.Normal.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6108</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.Normal.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6109</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.Normal.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6110</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.Normal.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6111</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.Normal.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6112</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.Normal.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6113</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.Normal.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6114</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrReqRelEnb.Normal.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">6115</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.HoFail" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4907</countId>
+        <countId counterType="1">4914</countId>
+        <countId counterType="1">4949</countId>
+        <countId counterType="1">5009</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.HoFail.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5259</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.HoFail.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5260</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.HoFail.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5261</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.HoFail.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5262</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.HoFail.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5263</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.HoFail.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5264</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.HoFail.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5265</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.HoFail.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5266</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.HoFail.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5267</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrLeft" measObjName="Cell" statType="6" outType="1">
+        <countId counterType="3">6520</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrLeft.1" measObjName="Cell" statType="6" outType="1">
+        <countId counterType="3">6521</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrLeft.2" measObjName="Cell" statType="6" outType="1">
+        <countId counterType="3">6522</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrLeft.3" measObjName="Cell" statType="6" outType="1">
+        <countId counterType="3">6523</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrLeft.4" measObjName="Cell" statType="6" outType="1">
+        <countId counterType="3">6524</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrLeft.5" measObjName="Cell" statType="6" outType="1">
+        <countId counterType="3">6525</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrLeft.6" measObjName="Cell" statType="6" outType="1">
+        <countId counterType="3">6526</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrLeft.7" measObjName="Cell" statType="6" outType="1">
+        <countId counterType="3">6527</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrLeft.8" measObjName="Cell" statType="6" outType="1">
+        <countId counterType="3">6528</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrLeft.9" measObjName="Cell" statType="6" outType="1">
+        <countId counterType="3">6529</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttInitEstab" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5696</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttInitEstab.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5697</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttInitEstab.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5698</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttInitEstab.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5699</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttInitEstab.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5700</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttInitEstab.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5701</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttInitEstab.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5702</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttInitEstab.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5703</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttInitEstab.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5704</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrAttInitEstab.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5705</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccInitEstab" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5706</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccInitEstab.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5707</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccInitEstab.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5708</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccInitEstab.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5709</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccInitEstab.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5710</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccInitEstab.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5711</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccInitEstab.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5712</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccInitEstab.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5713</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccInitEstab.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5714</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrSuccInitEstab.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">5715</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMaxEstab" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">6520</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMaxEstab.1" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">6521</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMaxEstab.2" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">6522</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMaxEstab.3" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">6523</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMaxEstab.4" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">6524</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMaxEstab.5" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">6525</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMaxEstab.6" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">6526</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMaxEstab.7" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">6527</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMaxEstab.8" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">6528</countId>
+    </pmMeas>
+    <pmMeas measName="ERAB.NbrMaxEstab.9" measObjName="Cell" statType="4" outType="1">
+        <countId counterType="3">6529</countId>
+    </pmMeas>
+
+    <!-- sheeet HC -->
+    <pmMeas measName="CONTEXT.AttInitalSetup" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4596</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.AttInitalSetup.Csfb" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4602</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.SuccInitalSetup" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4597</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.SuccInitalSetup.Csfb" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4603</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.FailInitalSetup" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4605</countId>
+        <countId counterType="1">4606</countId>
+        <countId counterType="1">4607</countId>
+        <countId counterType="1">4608</countId>
+        <countId counterType="1">4609</countId>
+        <countId counterType="1">4610</countId>
+        <countId counterType="1">4611</countId>
+        <countId counterType="1">4612</countId>
+        <countId counterType="1">4613</countId>
+        <countId counterType="1">4614</countId>
+        <countId counterType="1">4615</countId>
+        <countId counterType="1">4616</countId>
+        <countId counterType="1">4617</countId>
+        <countId counterType="1">4618</countId>
+        <countId counterType="1">4619</countId>
+        <countId counterType="1">4620</countId>
+        <countId counterType="1">4621</countId>
+        <countId counterType="1">4622</countId>
+        <countId counterType="1">4623</countId>
+        <countId counterType="1">4624</countId>
+        <countId counterType="1">4625</countId>
+        <countId counterType="1">4626</countId>
+        <countId counterType="1">4627</countId>
+        <countId counterType="1">4628</countId>
+        <countId counterType="1">4629</countId>
+        <countId counterType="1">4630</countId>
+        <countId counterType="1">4631</countId>
+        <countId counterType="1">4632</countId>
+        <countId counterType="1">4633</countId>
+        <countId counterType="1">4634</countId>
+        <countId counterType="1">4635</countId>
+        <countId counterType="1">4636</countId>
+        <countId counterType="1">4637</countId>
+        <countId counterType="1">4638</countId>
+        <countId counterType="1">4639</countId>
+        <countId counterType="1">4640</countId>
+        <countId counterType="1">4641</countId>
+        <countId counterType="1">4642</countId>
+        <countId counterType="1">4643</countId>
+        <countId counterType="1">4644</countId>
+        <countId counterType="1">4645</countId>
+        <countId counterType="1">4646</countId>
+        <countId counterType="1">4647</countId>
+        <countId counterType="1">4648</countId>
+        <countId counterType="1">4649</countId>
+        <countId counterType="1">4650</countId>
+        <countId counterType="1">4651</countId>
+        <countId counterType="1">4652</countId>
+        <countId counterType="1">4653</countId>
+        <countId counterType="1">4654</countId>
+        <countId counterType="1">4655</countId>
+        <countId counterType="1">4656</countId>
+        <countId counterType="1">4657</countId>
+        <countId counterType="1">4658</countId>
+        <countId counterType="1">4659</countId>
+        <countId counterType="1">4660</countId>
+        <countId counterType="1">4661</countId>
+        <countId counterType="1">4662</countId>
+        <countId counterType="1">4663</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.FailInitalSetup.CauseUnspecified2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.AttMod" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4664</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.AttMod.Csfb" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4666</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.SuccMod" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4665</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.SuccMod.Csfb" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4667</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.AttRelEnb" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4599</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.AttRelEnb.CauseUserInactivity" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4668</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.AttRelEnb.CauseUnspecified2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.AttRelEnb.Normal" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4599</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.AttRelMme" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4600</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.AttRelMme.Cause" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="CONTEXT.NbrLeft" measObjName="Cell" statType="6" outType="1">
+        <countId counterType="1">4604</countId>
+    </pmMeas>
+
+    <!-- sheeet HD -->
+    <pmMeas measName="HO.AttOutInterEnbS1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5056</countId>
+        <countId counterType="1">5116</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AttOutInterEnbS1.1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5243</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AttOutInterEnbS1.2" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5244</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccOutPrepInterEnbS1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5057</countId>
+        <countId counterType="1">5147</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccOutPrepInterEnbS1.1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5245</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AttOutExecInterEnbS1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5246</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AttOutExecInterEnbS1.1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5247</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccOutInterEnbS1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5066</countId>
+        <countId counterType="1">5157</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccOutInterEnbS1.1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5248</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccOutInterEnbS1.2" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5249</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AvgTimeInterEnbS1" measObjName="HO_OUT" statType="0" outType="3">
+        <countId counterType="3">5257</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AttOutInterEnbX2" measObjName="HO_OUT" statType=" 5" outType="1">
+        <countId counterType="1">4936</countId>
+        <countId counterType="1">4996</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AttOutInterEnbX2.1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5250</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AttOutInterEnbX2.2" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5251</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccOutPrepInterEnbX2" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">4937</countId>
+        <countId counterType="1">4997</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AttOutIntraEnb" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5196</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AttOutIntraEnb.1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5203</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AttOutIntraEnb.2" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5204</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccOutIntraEnb" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5197</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccOutIntraEnb.2" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5205</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccOutPrepInterEnbX2.1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5252</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AttOutExecInterEnbX2" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5253</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AttOutExecInterEnbX2.1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5254</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccOutInterEnbX2" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">4946</countId>
+        <countId counterType="1">5006</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccOutInterEnbX2.1" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5255</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccOutInterEnbX2.2" measObjName="HO_OUT" statType="5" outType="1">
+        <countId counterType="1">5256</countId>
+    </pmMeas>
+    <pmMeas measName="HO.AvgTimeInterEnbX2" measObjName="HO_OUT" statType="0" outType="3">
+        <countId counterType="3">5258</countId>
+    </pmMeas>
+    <pmMeas measName="HO.SuccExecInc" measObjName="HO_IN" statType="5" outType="1">
+        <countId counterType="1">4093</countId>
+        <countId counterType="1">4919</countId>
+    </pmMeas>
+
+    <!-- xxx :异频暂时不支持
+
+    <! sheeet HE >
+    <pmMeas measName="IRATHO.AvgTimeOutGeran" measObjName="Cell" statType="0" outType="1">
+        <countId counterType="3">0</countId>
+    </pmMeas>
+    <pmMeas measName="IRATHO.AvgTimeOutGeran.Exec" measObjName="Cell" statType="0" outType="1">
+        <countId counterType="3">0</countId>
+    </pmMeas>
+    -->
+    
+    <!-- sheeet HG -->
+    <pmMeas measName="PAG.PagReceived" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4299</countId>
+    </pmMeas>
+    <pmMeas measName="PAG.PagDiscarded" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4300</countId>
+    </pmMeas>
+    
+    <!-- sheeet HH -->
+        <!-- xxx 和规范有出入
+    <pmMeas measName="PDCP.UpOctUl" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctUl.1" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctUl.2" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctUl.3" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctUl.4" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctUl.5" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctUl.6" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctUl.7" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctUl.8" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctUl.9" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctDl" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctDl.1" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctDl.2" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctDl.3" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctDl.4" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctDl.5" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctDl.6" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctDl.7" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctDl.8" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpOctDl.9" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktUl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktUl.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktUl.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktUl.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktUl.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktUl.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktUl.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktUl.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktUl.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktUl.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossUl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossUl.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossUl.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossUl.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossUl.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossUl.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossUl.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossUl.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossUl.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossUl.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    -->
+    <pmMeas measName="PDCP.NbrPktDl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9489</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktDl.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9490</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktDl.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9491</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktDl.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9492</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktDl.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9493</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktDl.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9494</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktDl.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9495</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktDl.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9496</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktDl.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9497</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktDl.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9498</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossDl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9410</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossDl.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9411</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossDl.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9412</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossDl.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9413</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossDl.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9414</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossDl.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9415</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossDl.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9416</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossDl.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9417</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossDl.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9418</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.NbrPktLossDl.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9419</countId>
+    </pmMeas>
+    <!-- xxx 不符合规范
+    <pmMeas measName="PDCP.UpPktDiscardDl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktDiscardDl.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktDiscardDl.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktDiscardDl.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktDiscardDl.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktDiscardDl.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktDiscardDl.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktDiscardDl.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktDiscardDl.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktDiscardDl.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    -->
+    <pmMeas measName="PDCP.ThrpTimeDL._Qci" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9461</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.ThrpTimeDL.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9462</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.ThrpTimeDL.3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9463</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.ThrpTimeDL.4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9464</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.ThrpTimeDL.5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9465</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.ThrpTimeDL.6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9466</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.ThrpTimeDL.7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9467</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.ThrpTimeDL.8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9468</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.ThrpTimeDL.9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9469</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktTotDelayDl" measObjName="Cell" statType="2" outType="0">
+        <countId counterType="1">9510</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktTotDelayDl.1" measObjName="Cell" statType="2" outType="0">
+        <countId counterType="1">9511</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktTotDelayDl.2" measObjName="Cell" statType="2" outType="0">
+        <countId counterType="1">9512</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktTotDelayDl.3" measObjName="Cell" statType="2" outType="0">
+        <countId counterType="1">9513</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktTotDelayDl.4" measObjName="Cell" statType="2" outType="0">
+        <countId counterType="1">9514</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktTotDelayDl.5" measObjName="Cell" statType="2" outType="0">
+        <countId counterType="1">9515</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktTotDelayDl.6" measObjName="Cell" statType="2" outType="0">
+        <countId counterType="1">9516</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktTotDelayDl.7" measObjName="Cell" statType="2" outType="0">
+        <countId counterType="1">9517</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktTotDelayDl.8" measObjName="Cell" statType="2" outType="0">
+        <countId counterType="1">9518</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpPktTotDelayDl.9" measObjName="Cell" statType="2" outType="0">
+        <countId counterType="1">9519</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctUl" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9610</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctUl.1" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9611</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctUl.2" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9612</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctUl.3" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9613</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctUl.4" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9614</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctUl.5" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9615</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctUl.6" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9616</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctUl.7" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9617</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctUl.8" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9618</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctUl.9" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9619</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctDl" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9560</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctDl.1" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9561</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctDl.2" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9562</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctDl.3" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9563</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctDl.4" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9564</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctDl.5" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9565</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctDl.6" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9566</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctDl.7" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9567</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctDl.8" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9568</countId>
+    </pmMeas>
+    <pmMeas measName="PDCP.UpLastTtiOctDl.9" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9569</countId>
+    </pmMeas>
+    
+    <!-- sheeet HI -->
+        <!-- xxx   有出入
+    <pmMeas measName="RRU.TtiTotUl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9325</countId>
+    </pmMeas>
+    <pmMeas measName="RRU.TtiTotDl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9326</countId>
+    </pmMeas>
+    -->
+    <pmMeas measName="RRU.DtchPrbAssnUl" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9330</countId>
+    </pmMeas>
+    <!--xxx 未填写counterid
+    <pmMeas measName="RRU.DtchPrbAssnUl.1" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    -->
+    <pmMeas measName="RRU.DtchPrbAssnUl.2" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9331</countId>
+    </pmMeas>
+    <pmMeas measName="RRU.DtchPrbAssnDl" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9310</countId>
+    </pmMeas>
+    <!--xxx 未填写counterid
+    <pmMeas measName="RRU.DtchPrbAssnDl.1" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">1</countId>
+    </pmMeas>
+    -->
+    <pmMeas measName="RRU.DtchPrbAssnDl.2" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9332</countId>
+    </pmMeas>
+    <pmMeas measName="RRU.PuschPrbAssn" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9306</countId>
+    </pmMeas>
+    <pmMeas measName="RRU.PdschPrbAssn" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9309</countId>
+    </pmMeas>
+    <pmMeas measName="RRU.PdcchCceUtil" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9320</countId>
+    </pmMeas>
+    <pmMeas measName="RRU.PuschPrbTot" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9308</countId>
+    </pmMeas>
+    <pmMeas measName="RRU.PdschPrbTot" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9311</countId>
+    </pmMeas>
+    <pmMeas measName="RRU.TotalPrbUsageMeanUl" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9333</countId>
+    </pmMeas>
+    <pmMeas measName="RRU.TotalPrbUsageMeanDl" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">9334</countId>
+    </pmMeas>
+    
+    
+    <!-- sheeet HJ -->
+    <!-- xxx trps还未实现
+    <pmMeas measName="SIG.SctpCongestionDuration" measObjName="Cell" statType="2" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="SIG.SctpUnavailableDuration" measObjName="Cell" statType="2" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    -->
+    
+    
+    <!-- sheeet HL -->
+    <!-- xxx trpu还未实现
+    <pmMeas measName="S1.IncNbrOctGtpU" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">16401</countId>
+    </pmMeas>
+    <pmMeas measName="S1.OutNbrOctGtpU" measObjName="Cell" statType="5" outType="0">
+        <countId counterType="1">16402</countId>
+    </pmMeas>
+    <pmMeas measName="S1.SentDiagosisTotalPacket" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="S1.ReceivedDiagosisTotalPacket" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="S1.DiagosisPacketTotalDelay" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="S1.DiagosisPacketTotalJitter" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    -->
+    
+    <!-- sheeet HM -->
+        <!-- xxx  没有counterid
+    <pmMeas measName="MAC.NbrTbUl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbUl.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbUl.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrInitTbUl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrInitTbUl.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrInitTbUl.Qpsk" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrInitTbUl.16Qam" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrInitTbUl.64Qam" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbUl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbUl.Qpsk" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbUl.16Qam" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbUl.64Qam" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbUl.Qpsk.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbUl.16Qam.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbUl.64Qam.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    -->
+    <pmMeas measName="MAC.NbrResErrTbUl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9305</countId>
+    </pmMeas>
+    <!-- xxx  没有counterid
+    <pmMeas measName="MAC.NbrTbDl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbDl.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbDl.2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbDl.Rank1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbDl.Rank2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbDl.Tm1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbDl.Tm2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbDl.Tm3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbDl.Tm4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbDl.Tm5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbDl.Tm6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrTbDl.Tm7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrInitTbDl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrInitTbDl.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrInitTbDl.Qpsk" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrInitTbDl.16Qam" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrInitTbDl.64Qam" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrInitTbDl.256Qam" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbDl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbDl.Qpsk" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbDl.16Qam" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbDl.64Qam" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbDl.256Qam" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbDl.Qpsk.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrSuccInitTbDl.16Qam.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    -->
+    <pmMeas measName="MAC.NbrSuccInitTbDl.64Qam.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">9300</countId>
+    </pmMeas>
+    <!-- xxx  没有counterid
+    <pmMeas measName="MAC.NbrSuccInitTbDl.256Qam.1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrResErrTbDl" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrRbDl.Tm2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrRbDl.Tm3.SFBC" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    <pmMeas measName="MAC.NbrRbDl.Tm3.SM" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    -->
+    
+    <!-- sheeet HN -->
+    <pmMeas measName="PHY.NbrCqi0" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8592</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi1" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8593</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi2" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8594</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi3" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8595</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi4" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8596</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi5" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8597</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi6" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8598</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi7" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8599</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi8" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8600</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi9" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8601</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi10" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8602</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi11" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8603</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi12" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8604</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi13" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8605</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi14" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8606</countId>
+    </pmMeas>
+    <pmMeas measName="PHY.NbrCqi15" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">8607</countId>
+    </pmMeas>
+    <!--xxx  不符合规范，这项会有100个子项
+    <pmMeas measName="PHY.ULMeanNL.PRB0" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    ……
+    <pmMeas measName="PHY.ULMeanNL.PRB99" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="1">0</countId>
+    </pmMeas>
+    -->
+
+    
+    
+    <!-- sheeet HO -->
+    <pmMeas measName="EQPT.MeanMeLoad" measObjName="Cell" statType="3" outType="0">
+        <countId counterType="3">1</countId>
+    </pmMeas>
+    <pmMeas measName="EQPT.MaxMeLoad" measObjName="Cell" statType="4" outType="0">
+        <countId counterType="3">1</countId>
+    </pmMeas>
+    
+    
+    <!-- sheeet HS -->
+    <pmMeas measName="S1SIG.ConnEstabAtt" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4296</countId>
+    </pmMeas>
+    <pmMeas measName="S1SIG.ConnEstabSucc" measObjName="Cell" statType="5" outType="1">
+        <countId counterType="1">4298</countId>
+    </pmMeas>
+</configuration>

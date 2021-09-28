@@ -1,0 +1,8 @@
+@startuml
+
+[第一个组件]
+[第二个组件] as com2
+component 组件三
+component [最后一个组件] as com4
+
+@enduml

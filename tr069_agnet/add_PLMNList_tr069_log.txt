@@ -1,0 +1,148 @@
+2021.08.03 09:48:48.388 tr069_agent Info      | ser:167346 hw:0x0 id:0xf | http.c(281) http_new_client | <13569|F4EB5840> +++ RECEIVED HTTP REQUEST +++
+2021.08.03 09:48:48.388 tr069_agent Info      | ser:167347 hw:0x0 id:0xf | digestauth.c(328) http_digest_auth_fail_response | <13569|F4EB5840> http_digest_auth_fail_response: header: Digest realm="realm@tr069_agent",qop="auth",nonce="491d592d7d20e6c10a3
+2021.08.03 09:48:48.388 tr069_agent Info      | ser:167348 hw:0x0 id:0xf | http.c(356) http_new_client | <13569|F4EB5840> --- RECEIVED HTTP REQUEST ---
+2021.08.03 09:48:48.388 tr069_agent Info      | ser:167349 hw:0x0 id:0xf | http.c(281) http_new_client | <13569|F4EB5840> +++ RECEIVED HTTP REQUEST +++
+2021.08.03 09:48:48.389 tr069_agent Info      | ser:167350 hw:0x0 id:0xf | digestauth.c(371) http_digest_auth_check | <13569|F4EB5840> http_digest_auth_check: header: username="acs", realm="realm@tr069_agent", nonce="491d592d7d20e6c10a303a2a2897
+2021.08.03 09:48:48.389 tr069_agent Info      | ser:167351 hw:0x0 id:0xf | http.c(327) http_new_client | <13569|F4EB5840> +++ HTTP SERVER CONNECTION SUCCESS +++
+2021.08.03 09:48:48.389 tr069_agent Notice    | ser:167352 hw:0x0 id:0xf | http.c(328) http_new_client | <13569|F4EB5840> ACS initiated connection
+2021.08.03 09:48:48.389 tr069_agent Notice    | ser:167353 hw:0x0 id:0xf | cwmp.c(722) cwmp_add_event | <13569|F4EB5840> add event '6 CONNECTION REQUEST'
+2021.08.03 09:48:48.389 tr069_agent Info      | ser:167354 hw:0x0 id:0xf | http.c(356) http_new_client | <13569|F4EB5840> --- RECEIVED HTTP REQUEST ---
+2021.08.03 09:48:48.398 tr069_agent Notice    | ser:167355 hw:0x0 id:0xf | cwmp.c(346) cwmp_inform | <13569|F4EB5840> start session
+2021.08.03 09:48:48.398 tr069_agent Info      | ser:167356 hw:0x0 id:0xf | http.c(50) http_client_init | <13569|F4EB5840> +++ HTTP CLIENT CONFIGURATION +++
+2021.08.03 09:48:48.398 tr069_agent Info      | ser:167357 hw:0x0 id:0xf | http.c(51) http_client_init | <13569|F4EB5840> url: http://10.110.38.212:8460/Acsweb/acs
+2021.08.03 09:48:48.398 tr069_agent Info      | ser:167358 hw:0x0 id:0xf | http.c(53) http_client_init | <13569|F4EB5840> ssl_cert: ssl_cert
+2021.08.03 09:48:48.398 tr069_agent Info      | ser:167359 hw:0x0 id:0xf | http.c(55) http_client_init | <13569|F4EB5840> ssl_cacert: ssl_cacert
+2021.08.03 09:48:48.398 tr069_agent Info      | ser:167360 hw:0x0 id:0xf | http.c(58) http_client_init | <13569|F4EB5840> --- HTTP CLIENT CONFIGURATION ---
+2021.08.03 09:48:48.398 tr069_agent Notice    | ser:167361 hw:0x0 id:0xf | http.c(83) http_client_init | <13569|F4EB5840> configured acs url http://10.110.38.212:8460/Acsweb/acs
+2021.08.03 09:48:48.398 tr069_agent Info      | ser:167362 hw:0x0 id:0xf | xml.c(831) xml_prepare_inform_message | <13569|F4EB5840> tr069_agent url = http://10.110.38.212:7547
+2021.08.03 09:48:48.398 tr069_agent Notice    | ser:167363 hw:0x0 id:0xf | cwmp.c(286) rpc_inform | <13569|F4EB5840> send Inform
+2021.08.03 09:48:48.398 tr069_agent Info      | ser:167364 hw:0x0 id:0xf | http.c(139) http_send_message | <13569|F4EB5840> +++ SEND HTTP REQUEST +++
+2021.08.03 09:48:48.398 tr069_agent Info      | ser:167365 hw:0x0 id:0xf | http.c(140) http_send_message | <13569|F4EB5840> --- SEND HTTP REQUEST ---
+2021.08.03 09:48:48.398 tr069_agent Info      | ser:167366 hw:0x0 id:0xf | http.c(207) http_send_message | <13569|F4EB5840> +++ RECEIVED HTTP RESPONSE +++
+2021.08.03 09:48:48.398 tr069_agent Info      | ser:167367 hw:0x0 id:0xf | http.c(208) http_send_message | <13569|F4EB5840> --- RECEIVED HTTP RESPONSE ---
+2021.08.03 09:48:48.398 tr069_agent Notice    | ser:167368 hw:0x0 id:0xf | cwmp.c(357) cwmp_inform | <13569|F4EB5840> receive InformResponse from the ACS
+2021.08.03 09:48:48.399 tr069_agent Notice    | ser:167369 hw:0x0 id:0xf | cwmp.c(437) cwmp_handle_messages | <13569|F4EB5840> send empty message to the ACS
+2021.08.03 09:48:48.399 tr069_agent Info      | ser:167370 hw:0x0 id:0xf | http.c(151) http_send_message | <13569|F4EB5840> +++ SEND EMPTY HTTP REQUEST +++
+2021.08.03 09:48:48.399 tr069_agent Info      | ser:167371 hw:0x0 id:0xf | http.c(207) http_send_message | <13569|F4EB5840> +++ RECEIVED HTTP RESPONSE +++
+2021.08.03 09:48:48.399 tr069_agent Info      | ser:167372 hw:0x0 id:0xf | http.c(208) http_send_message | <13569|F4EB5840> --- RECEIVED HTTP RESPONSE ---
+2021.08.03 09:48:48.399 tr069_agent Notice    | ser:167373 hw:0x0 id:0xf | xml.c(592) xml_handle_message | <13569|F4EB5840> received AddObject method from the ACS
+2021.08.03 09:48:48.399 tr069_agent Info      | ser:167374 hw:0x0 id:0xf | xml.c(2629) xml_handle_AddObject | <13569|F4EB5840> input parameters:
+2021.08.03 09:48:48.399 tr069_agent Info      | ser:167375 hw:0x0 id:0xf | xml.c(2630) xml_handle_AddObject | <13569|F4EB5840> object_name = InternetGatewayDevice.Services.FAPService.1.CellConfig.LTE.EPC.PLMNList., param_key =
+2021.08.03 09:48:48.399 tr069_agent Notice    | ser:167376 hw:0x0 id:0x80 | tr069_mo.c(9578) tr069_add_object_req | <13569|F4EB5840> receive add obj req.
+2021.08.03 09:48:48.399 tr069_agent Notice    | ser:167377 hw:0x0 id:0x80 | tr069_mo.c(9598) tr069_add_object_req | <13569|F4EB5840> pMsg = InternetGatewayDevice.Services.FAPService.1.CellConfig.LTE.EPC.PLMNList., *msgLen = 256.
+2021.08.03 09:48:48.399 tr069_agent Info      | ser:167378 hw:0x0 id:0xf | external.c(1288) send_msg_to_oam | <13569|F4EB5840> total msg len = 288.
+2021.08.03 09:48:48.399 tr069_agent Info      | ser:167379 hw:0x0 id:0xf | log.c(104) logBinMsg | <13569|F4EB5840>
+2021.08.03 09:48:48.399 tr069_agent Info      | ser:167380 hw:0x0 id:0xf | log.c(104) logBinMsg | <13569|F4EB5840>
+2021.08.03 09:48:48.399 tr069_agent Info      | ser:167381 hw:0x0 id:0xf | external.c(1319) send_msg_to_oam | <13569|F4EB5840> CSPL_StartModuleTimer success, msgId=0x1532, outTimer=25(s)
+2021.08.03 09:48:48.399 tr069_agent Info      | ser:167383 hw:0x0 id:0xf | external.c(1353) handle_add_object_to_oam | <13569|F4EB5840> send_msg_to_oam success^_^
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167384 hw:0x0 id:0x4 | oam_adp_tr069.c(1692) oam_adp_tr069_agent_process_msg | <02931|97FFCB40> *****rcv tr069 Msg:src<15>,dst<248>,api<0x1532:TR069_ADD_OBJ>,api_len<256>,trans_id<0>*****
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167385 hw:0x0 id:0x4 | oam_adp_tr069.c(1625) adp_process_tr069_agent_msg | <02931|97FFCB40> *****rcv tr069 Msg:src<15>,dst<248>,api<0x1532:TR069_ADD_OBJ>,api_len<256>,trans_id<0>*****
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167386 hw:0x0 id:0x4 | oam_adp_tr069.c(699) tr069_process_add_msg | <02931|97FFCB40> receive add obj req.
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167387 hw:0x0 id:0x4 | oam_adp_tr069.c(707) tr069_process_add_msg | <02931|97FFCB40> receive add obj,datapath = InternetGatewayDevice.Services.FAPService.1.CellConfig.LTE.EPC.PLMNList.
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167388 hw:0x0 id:0x4 | oam_adp_tr069.c(708) tr069_process_add_msg | <02931|97FFCB40> oper_id = 0
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167389 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = Services
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167390 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = FAPService
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167391 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = 1
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167392 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(639) find_instance_no_by_path | <02931|97FFCB40> n_id_array = 1, id_array = 1
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167393 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = CellConfig
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167394 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = LTE
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167395 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = EPC
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167396 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = PLMNList
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167397 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(100) print_data_bin | <02931|97FFCB40> 11111111111111
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167398 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> aa-55-55-aa-00-00-00-00-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167399 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 00-00-00-f8-00-00-00-fb-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167400 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 1f-ff-03-00-00-00-00-81-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167401 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 00-00-00-00-00-00-00-00-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167402 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 00-00-00-03-00-00-00-00-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167403 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 00-00-00-01-00-00-00-01-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167404 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 00-00-00-49-49-6e-74-65-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167405 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 72-6e-65-74-47-61-74-65-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167406 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 77-61-79-44-65-76-69-63-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167407 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 65-2e-53-65-72-76-69-63-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167408 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 65-73-2e-46-41-50-53-65-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167409 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 72-76-69-63-65-2e-31-2e-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167410 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 43-65-6c-6c-43-6f-6e-66-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167411 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 69-67-2e-4c-54-45-2e-45-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167412 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 50-43-2e-50-4c-4d-4e-4c-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167413 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(108) print_data_bin | <02931|97FFCB40> 69-73-74-2e-00-00-00-00-
+2021.08.03 09:48:48.399 oam_adp  Error     | ser:167414 hw:0x0 id:0xf8 | oam_adp_tr069_utils.c(113) print_data_bin | <02931|97FFCB40> 00-
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167415 hw:0x0 id:0x4 | oam_adp_tr069.c(805) tr069_process_add_msg | <02931|97FFCB40> send add obj msg ok.
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167418 hw:0x0 id:0x4 | cfg_mom.c(767) oam_adp_tr069_req_process | <02931|9D1FDB40> [1]ui_operate oper_type ADD_OBJ, oper_id 0, value_len 0, value null value
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167419 hw:0x0 id:0x4 | cfg_mom.c(768) oam_adp_tr069_req_process | <02931|9D1FDB40> [2]n_id_array 1, id_array 1,
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167420 hw:0x0 id:0x4 | cfg_mom.c(769) oam_adp_tr069_req_process | <02931|9D1FDB40> [3]param_name_len 73, param_name InternetGatewayDevice.Services.FAPService.1.CellConfig.LTE.EPC.PLMNList.
+2021.08.03 09:48:48.399 oam_adp  Detailed  | ser:167430 hw:0x0 id:0x4 | oam_adp_layer.c(297) oam_adp_layer_intf_process_msg | <02931|9D1FDB40> oam_adp_tr069_req_process success
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167523 hw:0x0 id:0x4 | cfg_mom.c(227) oam_adp_send_oper_ret_msg_to_tr069 | <02931|9D9FEB40> result    2
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167524 hw:0x0 id:0x4 | cfg_mom.c(228) oam_adp_send_oper_ret_msg_to_tr069 | <02931|9D9FEB40> oper_str_len    1
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167525 hw:0x0 id:0x4 | cfg_mom.c(229) oam_adp_send_oper_ret_msg_to_tr069 | <02931|9D9FEB40> n_instance_id   0
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167526 hw:0x0 id:0x4 | cfg_mom.c(230) oam_adp_send_oper_ret_msg_to_tr069 | <02931|9D9FEB40> t_oper_id       0
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167527 hw:0x0 id:0x4 | cfg_mom.c(231) oam_adp_send_oper_ret_msg_to_tr069 | <02931|9D9FEB40> t_oper_type     3
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167528 hw:0x0 id:0x4 | cfg_mom.c(254) oam_adp_send_oper_ret_msg_to_tr069 | <02931|9D9FEB40> msgLength[53] ntohl(oper_str_len)[1]
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167529 hw:0x0 id:0x4 | cfg_mom.c(308) oam_adp_send_oper_ret_msg_to_tr069 | <02931|9D9FEB40> OAM_ADP_THIRD_MODULE send msg successfully!
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167534 hw:0x0 id:0x4 | oam_adp_tr069.c(1692) oam_adp_tr069_agent_process_msg | <02931|97FFCB40> *****rcv tr069 Msg:src<251>,dst<248>,api<0x1fff:TR069_ADP_ACK>,api_len<21>,trans_id<0>*****
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167535 hw:0x0 id:0x4 | oam_adp_tr069.c(1625) adp_process_tr069_agent_msg | <02931|97FFCB40> *****rcv tr069 Msg:src<251>,dst<248>,api<0x1fff:TR069_ADP_ACK>,api_len<21>,trans_id<0>*****
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167536 hw:0x0 id:0x4 | oam_adp_tr069.c(1753) oam_adp_tr069_agent_process_msg | <02931|97FFCB40> in adp ack!
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167537 hw:0x0 id:0x4 | oam_adp_tr069.c(971) adp_ack_process | <02931|97FFCB40> trans_id    0
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167538 hw:0x0 id:0x4 | oam_adp_tr069.c(972) adp_ack_process | <02931|97FFCB40> result    2
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167539 hw:0x0 id:0x4 | oam_adp_tr069.c(973) adp_ack_process | <02931|97FFCB40> oper_str_len    1
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167540 hw:0x0 id:0x4 | oam_adp_tr069.c(974) adp_ack_process | <02931|97FFCB40> oper_str
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167541 hw:0x0 id:0x4 | oam_adp_tr069.c(975) adp_ack_process | <02931|97FFCB40> n_instance_id   0
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167542 hw:0x0 id:0x4 | oam_adp_tr069.c(980) adp_ack_process | <02931|97FFCB40> t_oper_id       0
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167543 hw:0x0 id:0x4 | oam_adp_tr069.c(981) adp_ack_process | <02931|97FFCB40> t_oper_type     3
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167544 hw:0x0 id:0x4 | oam_adp_tr069.c(1005) adp_ack_process | <02931|97FFCB40> glb_oper_id = 0, glb_add_path = InternetGatewayDevice.Services.FAPService.1.CellConfig.LTE.EPC.PLMNList.
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167545 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = Services
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167546 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = FAPService
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167547 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = 1
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167548 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(639) find_instance_no_by_path | <02931|97FFCB40> n_id_array = 1, id_array = 1
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167549 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = CellConfig
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167550 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = LTE
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167551 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = EPC
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167552 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(633) find_instance_no_by_path | <02931|97FFCB40> id_num = PLMNList
+2021.08.03 09:48:48.416 oam_adp  Detailed  | ser:167553 hw:0x0 id:0x4 | oam_adp_tr069_utils.c(527) sql_insert_inst | <02931|97FFCB40> sqlite3_cmd = insert into TR069_EPC_PLMNList (Inst1, Inst2) values(1, 8)
+2021.08.03 09:48:48.451 oam_adp  Detailed  | ser:167555 hw:0x0 id:0x2 | oam_adp_tr069.c(416) send_msg_to_tr069_agent | <02931|97FFCB40> TR069_TASK_MODULE_ID send msg success!, api_id=[0x1532:5426:TR069_ADD_OBJ]
+2021.08.03 09:48:48.451 oam_adp  Detailed  | ser:167556 hw:0x0 id:0x2 | oam_adp_tr069.c(416) send_msg_to_tr069_agent | <02931|97FFCB40> TR069_TASK_MODULE_ID send msg success!, api_id=[0x1561:5473:not match]
+2021.08.03 09:48:48.451 tr069_agent Info      | ser:167559 hw:0x0 id:0xf | log.c(104) logBinMsg | <13569|A2BFFB40>
+2021.08.03 09:48:48.451 tr069_agent Info      | ser:167560 hw:0x0 id:0xf | log.c(104) logBinMsg | <13569|A2BFFB40>
+2021.08.03 09:48:48.451 tr069_agent Info      | ser:167561 hw:0x0 id:0xf | external.c(1017) handle_all_oam_rspmsg | <13569|A2BFFB40> OAM Response msgID = 0x1532
+2021.08.03 09:48:48.451 tr069_agent Notice    | ser:167562 hw:0x0 id:0xf | external.c(217) handle_add_object_rsp | <13569|A2BFFB40> receive add object rsp.
+2021.08.03 09:48:48.451 tr069_agent Info      | ser:167563 hw:0x0 id:0xf | external.c(228) handle_add_object_rsp | <13569|A2BFFB40> rsp code = 0x0
+2021.08.03 09:48:48.451 tr069_agent Info      | ser:167564 hw:0x0 id:0xf | external.c(232) handle_add_object_rsp | <13569|A2BFFB40> wrap_CSPL_StopModuleTimer.
+2021.08.03 09:48:48.451 tr069_agent Info      | ser:167565 hw:0x0 id:0xf | log.c(104) logBinMsg | <13569|A2BFFB40>
+2021.08.03 09:48:48.451 tr069_agent Info      | ser:167566 hw:0x0 id:0xf | log.c(104) logBinMsg | <13569|A2BFFB40>
+2021.08.03 09:48:48.451 tr069_agent Info      | ser:167567 hw:0x0 id:0xf | external.c(1017) handle_all_oam_rspmsg | <13569|A2BFFB40> OAM Response msgID = 0x1561
+2021.08.03 09:48:48.451 tr069_agent Info      | ser:167568 hw:0x0 id:0xf | external.c(965) handle_inform_adddel | <13569|A2BFFB40> dataPath = InternetGatewayDevice.Services.FAPService.1.CellConfig.LTE.EPC.PLMNList.8. .
+2021.08.03 09:48:48.451 tr069_agent Notice    | ser:167569 hw:0x0 id:0x80 | tr069_mo.c(2010) TR069_add_instance_updata_allNodeMap | <13569|A2BFFB40> dataPath = InternetGatewayDevice.Services.FAPService.1.CellConfig.LTE.EPC.PLMNList.8..
+2021.08.03 09:48:48.451 tr069_agent Notice    | ser:167570 hw:0x0 id:0x80 | tr069_mo.c(2013) TR069_add_instance_updata_allNodeMap | <13569|A2BFFB40> dataPathTemp = InternetGatewayDevice.Services.FAPService.%d.CellConfig.LTE.EPC.PLMNList.%d..
+2021.08.03 09:48:48.454 tr069_agent Notice    | ser:167571 hw:0x0 id:0x80 | tr069_mo.c(1528) write_allNodeMap_to_json | <13569|A2BFFB40> creat allnode.json success
+2021.08.03 09:48:48.454 tr069_agent Info      | ser:167572 hw:0x0 id:0xf | external.c(982) handle_inform_adddel | <13569|A2BFFB40> notificationFlag = 2 .
+2021.08.03 09:48:48.454 tr069_agent Notice    | ser:167573 hw:0x0 id:0xf | cwmp.c(722) cwmp_add_event | <13569|A2BFFB40> add event '103 ADD OBJECT'
+2021.08.03 09:48:48.454 tr069_agent Info      | ser:167574 hw:0x0 id:0xf | external.c(995) handle_inform_adddel | <13569|A2BFFB40> notify inform msg to acs.
+2021.08.03 09:48:48.454 tr069_agent Info      | ser:167575 hw:0x0 id:0xf | external.c(1001) handle_inform_adddel | <13569|A2BFFB40> initiative notify inform msg to acs.
+2021.08.03 09:48:48.454 tr069_agent Info      | ser:167576 hw:0x0 id:0xf | xml.c(222) wait_oamrsp_finish | <13569|F4EB5840> oamrsp finished!
+2021.08.03 09:48:48.454 tr069_agent Notice    | ser:167577 hw:0x0 id:0xf | xml.c(2702) xml_handle_AddObject | <13569|F4EB5840> send AddObjectResponse to the ACS
+2021.08.03 09:48:48.454 tr069_agent Info      | ser:167578 hw:0x0 id:0xf | http.c(139) http_send_message | <13569|F4EB5840> +++ SEND HTTP REQUEST +++
+2021.08.03 09:48:48.454 tr069_agent Info      | ser:167579 hw:0x0 id:0xf | http.c(140) http_send_message | <13569|F4EB5840> --- SEND HTTP REQUEST ---
+2021.08.03 09:48:48.454 tr069_agent Info      | ser:167580 hw:0x0 id:0xf | http.c(215) http_send_message | <13569|F4EB5840> +++ RECEIVED EMPTY HTTP RESPONSE +++
+2021.08.03 09:48:48.454 tr069_agent Notice    | ser:167581 hw:0x0 id:0xf | cwmp.c(450) cwmp_handle_messages | <13569|F4EB5840> receive empty message from the ACS
+2021.08.03 09:48:48.454 tr069_agent Notice    | ser:167582 hw:0x0 id:0xf | http.c(99) http_client_exit | <13569|F4EB5840> can't remove file /tmp/tr069Agent_cookies
+2021.08.03 09:48:48.454 tr069_agent Notice    | ser:167583 hw:0x0 id:0xf | cwmp.c(418) cwmp_inform | <13569|F4EB5840> end session success
+2021.08.03 09:48:48.463 tr069_agent Notice    | ser:167584 hw:0x0 id:0xf | cwmp.c(346) cwmp_inform | <13569|F4EB5840> start session
+2021.08.03 09:48:48.463 tr069_agent Info      | ser:167585 hw:0x0 id:0xf | http.c(50) http_client_init | <13569|F4EB5840> +++ HTTP CLIENT CONFIGURATION +++
+2021.08.03 09:48:48.463 tr069_agent Info      | ser:167586 hw:0x0 id:0xf | http.c(51) http_client_init | <13569|F4EB5840> url: http://10.110.38.212:8460/Acsweb/acs
+2021.08.03 09:48:48.463 tr069_agent Info      | ser:167587 hw:0x0 id:0xf | http.c(53) http_client_init | <13569|F4EB5840> ssl_cert: ssl_cert
+2021.08.03 09:48:48.463 tr069_agent Info      | ser:167588 hw:0x0 id:0xf | http.c(55) http_client_init | <13569|F4EB5840> ssl_cacert: ssl_cacert
+2021.08.03 09:48:48.463 tr069_agent Info      | ser:167589 hw:0x0 id:0xf | http.c(58) http_client_init | <13569|F4EB5840> --- HTTP CLIENT CONFIGURATION ---
+2021.08.03 09:48:48.463 tr069_agent Notice    | ser:167590 hw:0x0 id:0xf | http.c(83) http_client_init | <13569|F4EB5840> configured acs url http://10.110.38.212:8460/Acsweb/acs
+2021.08.03 09:48:48.463 tr069_agent Info      | ser:167591 hw:0x0 id:0xf | xml.c(831) xml_prepare_inform_message | <13569|F4EB5840> tr069_agent url = http://10.110.38.212:7547
+2021.08.03 09:48:48.463 tr069_agent Notice    | ser:167592 hw:0x0 id:0xf | cwmp.c(286) rpc_inform | <13569|F4EB5840> send Inform
+2021.08.03 09:48:48.463 tr069_agent Info      | ser:167593 hw:0x0 id:0xf | http.c(139) http_send_message | <13569|F4EB5840> +++ SEND HTTP REQUEST +++
+2021.08.03 09:48:48.463 tr069_agent Info      | ser:167594 hw:0x0 id:0xf | http.c(140) http_send_message | <13569|F4EB5840> --- SEND HTTP REQUEST ---
+2021.08.03 09:48:48.464 tr069_agent Info      | ser:167595 hw:0x0 id:0xf | http.c(207) http_send_message | <13569|F4EB5840> +++ RECEIVED HTTP RESPONSE +++
+2021.08.03 09:48:48.464 tr069_agent Info      | ser:167596 hw:0x0 id:0xf | http.c(208) http_send_message | <13569|F4EB5840> --- RECEIVED HTTP RESPONSE ---
+2021.08.03 09:48:48.464 tr069_agent Notice    | ser:167597 hw:0x0 id:0xf | cwmp.c(357) cwmp_inform | <13569|F4EB5840> receive InformResponse from the ACS
+2021.08.03 09:48:48.464 tr069_agent Notice    | ser:167598 hw:0x0 id:0xf | cwmp.c(437) cwmp_handle_messages | <13569|F4EB5840> send empty message to the ACS
+2021.08.03 09:48:48.464 tr069_agent Info      | ser:167599 hw:0x0 id:0xf | http.c(151) http_send_message | <13569|F4EB5840> +++ SEND EMPTY HTTP REQUEST +++
+2021.08.03 09:48:48.464 tr069_agent Info      | ser:167600 hw:0x0 id:0xf | http.c(215) http_send_message | <13569|F4EB5840> +++ RECEIVED EMPTY HTTP RESPONSE +++
+2021.08.03 09:48:48.464 tr069_agent Notice    | ser:167601 hw:0x0 id:0xf | cwmp.c(450) cwmp_handle_messages | <13569|F4EB5840> receive empty message from the ACS
+2021.08.03 09:48:48.464 tr069_agent Notice    | ser:167602 hw:0x0 id:0xf | http.c(99) http_client_exit | <13569|F4EB5840> can't remove file /tmp/tr069Agent_cookies
+2021.08.03 09:48:48.464 tr069_agent Notice    | ser:167603 hw:0x0 id:0xf | cwmp.c(418) cwmp_inform | <13569|F4EB5840> end session success
+

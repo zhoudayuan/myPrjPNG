@@ -1,0 +1,43 @@
++++ RECEIVED HTTP RESPONSE +++<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+    <soapenv:Header>
+        <cwmp:ID soapenv:mustUnderstand="1">61</cwmp:ID>
+    </soapenv:Header>
+
+    
+    <soapenv:Body>
+
+
+        <cwmp:SetParameterValues>
+
+            <ParameterList SOAP-ENC:arrayType="cwmp:ParameterValueStruct[4]">
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.FAP.PerfMgmt.Config.1.Enable</Name>
+                    <Value>1</Value>
+                </ParameterValueStruct>
+                
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.FAP.PerfMgmt.Config.1.URL</Name>
+                    <Value>http://s3.z100.vip:5947/file_info/post/performance/</Value>
+                </ParameterValueStruct>
+                
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.FAP.PerfMgmt.Config.1.PeriodicUploadInterval</Name>
+                    <Value>300</Value>
+                </ParameterValueStruct>
+                
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.FAP.PerfMgmt.Config.1.PeriodicUploadTime</Name>
+                    <Value>2021-07-23T02:40:31Z</Value>
+                </ParameterValueStruct>
+            </ParameterList>
+
+
+            <ParameterKey></ParameterKey>
+        </cwmp:SetParameterValues>
+
+
+    </soapenv:Body>
+
+
+</soapenv:Envelope>
+--- RECEIVED HTTP RESPONSE ---
